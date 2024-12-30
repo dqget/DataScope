@@ -1,0 +1,13 @@
+#spring通用配置
+spring:
+  application:
+    name: data-scope
+  profiles:
+    active: dev
+
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    # 日志文件名，全路径
+    name: ${spring.application.name}.log
+    path: ${user.home}/logs
