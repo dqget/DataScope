@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum ExceptionMessageEnum {
-    NO_ACCOUNT("LOGIN_01", "账号不存在"),
+    ACCOUNT_OR_PASSWORD_ERROR("LOGIN_01", "账号或密码错误不存在"),
 
     PASSWORD_ERROR("LOGIN_02", "账号密码错误"),
 

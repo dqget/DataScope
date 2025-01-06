@@ -14,6 +14,8 @@ public interface AccountService extends IService<Account> {
     AccountVO login(AccountVO accountVO);
 
 
+    AccountVO queryById(Long id);
+
     void cache(String token, AccountVO accountVO);
 
     void logout();

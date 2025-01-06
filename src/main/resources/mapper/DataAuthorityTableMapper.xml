@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hole.hs.mapper.DataAuthorityTableMapper">
+
+    <resultMap id="BaseResultMap" type="com.hole.hs.domain.DataAuthorityTable">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="createUser" column="create_user" jdbcType="BIGINT"/>
+            <result property="updateUser" column="update_user" jdbcType="BIGINT"/>
+            <result property="deleted" column="deleted" jdbcType="BIGINT"/>
+            <result property="statusof" column="statusof" jdbcType="BIGINT"/>
+            <result property="comments" column="comments" jdbcType="VARCHAR"/>
+            <result property="tableName" column="table_name" jdbcType="VARCHAR"/>
+            <result property="tableDesc" column="table_desc" jdbcType="VARCHAR"/>
+            <result property="orderNumber" column="order_number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_time,update_time,
+        create_user,update_user,deleted,
+        statusof,comments,table_name,
+        table_desc,order_number
+    </sql>
+</mapper>

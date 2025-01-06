@@ -1,9 +1,11 @@
 package com.hole.hs.model;
 
+import com.hole.hs.domain.Role;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 账户表
@@ -104,6 +106,8 @@ public class AccountVO implements Serializable {
      * 强制修改密码 0不需要 1需要
      */
     private Integer forceModifyPassword;
+
+    private List<Role> roles;
 
     private static final long serialVersionUID = 1L;
 }
